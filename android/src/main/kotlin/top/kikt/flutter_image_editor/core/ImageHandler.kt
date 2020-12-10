@@ -152,7 +152,7 @@ class ImageHandler(private val context: Context, private var bitmap: Bitmap) {
 
 //    val staticLayout = getStaticLayout(text, textPaint, canvas.width - text.x)
 
-    canvas.translate(text.x.toFloat(), text.y.toFloat())
+//    canvas.translate(text.x.toFloat(), text.y.toFloat())
 //  staticLayout.draw(canvas)
     canvas.translate((-text.x).toFloat(), (-text.y).toFloat())
   }
