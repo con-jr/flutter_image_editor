@@ -148,13 +148,13 @@ class ImageHandler(private val context: Context, private var bitmap: Bitmap) {
       } catch (e: Exception) {
       }
     }
-    canvas.drawText(text.text, text.x.toFloat(), text.y.toFloat(), textPaint)
+    canvas.drawText(text.text, text.x.toFloat(), (text.y - text.height).toFloat(), textPaint)
 
 //    val staticLayout = getStaticLayout(text, textPaint, canvas.width - text.x)
 
-    canvas.translate(text.x.toFloat(), text.y.toFloat())
+    canvas.translate(text.x.toFloat(), (text.y - text.height).toFloat())
 //    staticLayout.draw(canvas)
-    canvas.translate((-text.x).toFloat(), (-text.y).toFloat())
+    canvas.translate((-text.x).toFloat(), (-text.y - text.height).toFloat())
   }
 
   @Suppress("DEPRECATION")
