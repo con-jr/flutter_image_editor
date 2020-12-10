@@ -155,7 +155,7 @@ class ImageHandler(private val context: Context, private var bitmap: Bitmap) {
     canvas.translate(text.x.toFloat(), text.y.toFloat())
 //  staticLayout.draw(canvas)
     canvas.drawText(text.text, text.x.toFloat(), text.y.toFloat(), textPaint)
-    canvas.translate((-text.x).toFloat(), (-text.y).toFloat())
+//    canvas.translate((-text.x).toFloat(), (-text.y).toFloat())
   }
 
   @Suppress("DEPRECATION")
